@@ -20,4 +20,7 @@ The goal of this class is to take as input a string, containing the filename fro
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
 The goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build an image of pixels, containg the RGB values. After building the image the goal is to be able to reduce the image width by a value of k (such that W-k > 1). When reducing the image width by 1 just removing vertical line of pixels won't do. So in order to know which pixels to remove we must calculate the importance for every given pixel in the image. From this point starting at the top row (0th row) we will use the importance values to calcuate the shortest path from the top row to the last row. Once we have calculated the shortest path from top to bottom we must remove these pixels, reorder the pixels and repeat. We do this until we have done it k times. After the last interation we will write the end value to a file. In order to two this I must implement two methods: getImportance & writeReduced.
-- getImportance: Calculates the importance for every pixel by following these steps.
+- getImportance: Calculates the importance based on these requirements for every pixel.
+
+![imageprocessorimportance](https://user-images.githubusercontent.com/40704571/48817616-ed371280-ed0c-11e8-8291-2f5b0ececbd6.PNG)
+
