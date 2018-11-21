@@ -6,6 +6,7 @@ For my Computer Science 311 Programming Assignment 2 I was tasked with completin
 
 The goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build a directed graph. After building the graph the goal is to implement 3 variations of the shortest path problem: V2V, V2S, & S2S.
 - V2V:
+
 ![wgraphv2v](https://user-images.githubusercontent.com/40704571/48817349-ad236000-ed0b-11e8-94a2-d21a9e430bce.PNG)
 
 - V2S: takes as input ux, uy, & S (a set of vertices). Finds the shortest path from vertex at (ux, uy) to ALL vertices inside the set S. The output will be the array list of the shortest path from vertex (ux, uy) to a vertex in set S.
