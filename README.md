@@ -4,9 +4,9 @@ For my Computer Science 311 Programming Assignment 2 I wass tasked with complett
 ## WGraph
 INSERT PICTURE OF REQUIREMENTS
 As the requirements state the goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build a graph. After building the graph the goal is to implement 3 variations of the shortest path problem: V2V, V2S, & S2S.
-V2V: takes as input ux, uy, vx, & vy. Finds the shortest path from the vertex at (ux, uy) to (vx, vy). The output will be an array list of integers w/the index 0 = ux, 1 = uy, 2 = next x coordinate in the path, 3 = next y coordinate in the path. Up until you reach vx and vy.
-V2S: takes as input ux, uy, & S (a set of vertices). Finds the shortest path from vertex at (ux, uy) to ALL vertices inside the set S. The output will be the array list of the shortest path from vertex (ux, uy) to a vertex in set S.
-S2S: takes as input S1 & S2. Finds the shortest path between all vertices in S1 to all vertices in S2. And returns whichever path is the shortest.
+- V2V: takes as input ux, uy, vx, & vy. Finds the shortest path from the vertex at (ux, uy) to (vx, vy). The output will be an array list of integers w/the index 0 = ux, 1 = uy, 2 = next x coordinate in the path, 3 = next y coordinate in the path. Up until you reach vx and vy.
+- V2S: takes as input ux, uy, & S (a set of vertices). Finds the shortest path from vertex at (ux, uy) to ALL vertices inside the set S. The output will be the array list of the shortest path from vertex (ux, uy) to a vertex in set S.
+- S2S: takes as input S1 & S2. Finds the shortest path between all vertices in S1 to all vertices in S2. And returns whichever path is the shortest.
 
 ## ImageProcessor
 INSERT PICTURE OF REQUIREMENTS
