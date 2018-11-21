@@ -17,6 +17,8 @@ The goal of this class is to take as input a string, containing the filename fro
 
 ![wgraphs2s](https://user-images.githubusercontent.com/40704571/48817531-7d288c80-ed0c-11e8-92f9-39789fe2a53d.PNG)
 
+### Output of WGraph
+
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
 
@@ -29,3 +31,4 @@ The goal of this class is to take as input a string, containing the filename fro
 
 ![imageprocesswritereduced](https://user-images.githubusercontent.com/40704571/48817804-d2b16900-ed0d-11e8-9229-55cf4bac4ff0.PNG)
 
+### Output of ImageProcessor
