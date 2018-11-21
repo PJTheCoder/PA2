@@ -5,7 +5,7 @@ For my Computer Science 311 Programming Assignment 2 I was tasked with completin
 ![wgraph](https://user-images.githubusercontent.com/40704571/48816945-ca572f00-ed09-11e8-87f8-dfa43b191fda.PNG)
 
 The goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build a directed graph. After building the graph the goal is to implement 3 variations of the shortest path problem: V2V, V2S, & S2S.
-- V2V: takes as input ux, uy, vx, & vy. Finds the shortest path from the vertex at (ux, uy) to -(vx, vy). The output will be an array list of integers w/the index 0 = ux, 1 = uy, 2 = next x coordinate in the path, 3 = next y coordinate in the path. Up until you reach vx and vy.
+- V2V:
 ![wgraphv2v](https://user-images.githubusercontent.com/40704571/48817349-ad236000-ed0b-11e8-94a2-d21a9e430bce.PNG)
 
 - V2S: takes as input ux, uy, & S (a set of vertices). Finds the shortest path from vertex at (ux, uy) to ALL vertices inside the set S. The output will be the array list of the shortest path from vertex (ux, uy) to a vertex in set S.
