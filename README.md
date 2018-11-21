@@ -9,8 +9,13 @@ The goal of this class is to take as input a string, containing the filename fro
 
 ![wgraphv2v](https://user-images.githubusercontent.com/40704571/48817349-ad236000-ed0b-11e8-94a2-d21a9e430bce.PNG)
 
-- V2S: takes as input ux, uy, & S (a set of vertices). Finds the shortest path from vertex at (ux, uy) to ALL vertices inside the set S. The output will be the array list of the shortest path from vertex (ux, uy) to a vertex in set S.
-- S2S: takes as input S1 & S2. Finds the shortest path between all vertices in S1 to all vertices in S2. And returns whichever path is the shortest.
+- V2S:
+
+![wgraphv2s](https://user-images.githubusercontent.com/40704571/48817476-45214980-ed0c-11e8-8073-368373534dee.PNG)
+
+- S2S:
+
+![wgraphs2s](https://user-images.githubusercontent.com/40704571/48817531-7d288c80-ed0c-11e8-92f9-39789fe2a53d.PNG)
 
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
