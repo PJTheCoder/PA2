@@ -10,4 +10,5 @@ As the requirements state the goal of this class is to take as input a string, c
 
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
+
 As the requirements state the goal of this class is to take as input a string, containing the filenam from which to pull information from. This information is what will be used to build an image of pixels, containg the RGB values. After building the image the goal is to be able to reduce the image width by a value of k (such that W-k > 1). When reducing the image width by 1 just removing vertical line of pixels won't do. So in order to know which pixels to remove we must calculate the importance for every given pixel in the image. From this point starting at the top row (0th row) we will use the importance values to calcuate the shortest path from the top row to the last row.
