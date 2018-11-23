@@ -20,11 +20,13 @@ The goal of this class is to take as input a string, containing the filename fro
 ### Output of WGraph
 Here is the input I will use in order to calculate the shortest path.
 
-I calculate the path from () to () which gives me a path of:
+![wgraphv2v 0 0-3 0](https://user-images.githubusercontent.com/40704571/48961213-77af8a00-ef38-11e8-957e-75c589093e2d.PNG)
 
-Next I calculate the path from () to (),(),(), etc to find which path is the shortest.
+I calculate the shortest path from (0,0) to (3,0) which gives me:
 
-Lastly I calculate the path from (),(),(), etc to (),(),(), etc to find which path is the shortest.
+Next I calculate the shortest path from () to (),(),(), etc which gives me:
+
+Lastly I calculate the shortest path from (),(),(), etc to (),(),(), etc which gives me:
 
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
