@@ -1,5 +1,5 @@
 # COMS 311 PA2 WGraph & ImageProcessor
-For my Computer Science 311 Programming Assignment 2 I was tasked with completing two classes: WGraph and ImageProcessor. The main goal of this assignment was to implement different variations of the shortest path problem for graphs. I chose to use Dijkstra's.
+For my Computer Science 311 Programming Assignment 2 I was tasked with completing two classes: WGraph and ImageProcessor. The main goal of this assignment was to implement different variations of the shortest path problem for graphs. I chose to use my own implementation of Dijkstra's in order to satisfy that requirement.
 
 ## WGraph
 ![wgraph](https://user-images.githubusercontent.com/40704571/48816945-ca572f00-ed09-11e8-87f8-dfa43b191fda.PNG)
@@ -18,11 +18,18 @@ The goal of this class is to take as input a string, containing the filename fro
 ![wgraphs2s](https://user-images.githubusercontent.com/40704571/48817531-7d288c80-ed0c-11e8-92f9-39789fe2a53d.PNG)
 
 ### Output of WGraph
+Here is the input I will use in order to calculate the shortest path.
+
+I calculate the path from () to () which gives me a path of:
+
+Next I calculate the path from () to (),(),(), etc to find which path is the shortest.
+
+Lastly I calculate the path from (),(),(), etc to (),(),(), etc to find which path is the shortest.
 
 ## ImageProcessor
 ![imageprocessor](https://user-images.githubusercontent.com/40704571/48817009-14d8ab80-ed0a-11e8-975d-7a1e361406b0.PNG)
 
-The goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build an image of pixels, containg the RGB values. After building the image the goal is to be able to reduce the image width by a value of k (such that W-k > 1). When reducing the image width by 1 just removing vertical line of pixels won't do. So in order to know which pixels to remove we must calculate the importance for every given pixel in the image. From this point starting at the top row (0th row) we will use the importance values to calcuate the shortest path from the top row to the last row. Once we have calculated the shortest path from top to bottom we must remove these pixels, reorder the pixels and repeat. We do this until we have done it k times. After the last interation we will write the end value to a file. In order to two this I must implement two methods: getImportance & writeReduced.
+The goal of this class is to take as input a string, containing the filename from which to pull information from. This information is what will be used to build an image of pixels, containing the RGB values. After building the image the goal is to be able to reduce the image width by a value of k (such that W-k > 1). When reducing the image width by 1 just removing a vertical line of pixels won't do. So in order to know which pixels to remove we must calculate the importance for every given pixel in the image. From this point starting at the top row (0th row) we will use the importance values to calcuate the shortest path from the top row to the last row. Once we have calculated the shortest path from top to bottom we must remove these pixels, reorder the pixels and repeat. We do this k times. After the last interation we will write the end pixel values to a file. To do this we had to implement two methods: getImportance & writeReduced.
 - getImportance: Calculates the importance based on these requirements for every pixel.
 
 ![imageprocessorimportance](https://user-images.githubusercontent.com/40704571/48817616-ed371280-ed0c-11e8-8291-2f5b0ececbd6.PNG)
